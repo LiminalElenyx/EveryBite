@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+a:hover,
+a:focus-visible {
+    text-decoration: underline;
+}
+
+.site-title img {
+  width: min(360px, 70vw);  
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+html {font-size: 16px;}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: rgb(252 246 238);
+}
+
+h1,
+h2 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:rgb(0, 73, 37);
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color:rgb(0, 73, 37);
+}
+
+header {
+    max-width: 1100px;
+    margin: 24px auto 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.dashboard {
+    display: grid;
+    gap: 24px;
+    margin: 24px auto;
+    max-width: 1100px;
+    
+}
+
+.card {
+    padding: 0;
+    background: transparent ;
+    border: none;
+    border-radius: 0;
+}
+
+.action-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.dash-link {
+    display: inline-block;
+    padding: 40px 22px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(0, 73, 37);
+
+}
+
+.dash-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.log {
+    background-color: rgb(228, 163, 199);
+}
+
+.nutrients {
+    background-color: rgb(200, 174, 247);
+}
+
+.suggest {
+    background-color: rgb(244, 230, 119);
+}
+.summary-progress-wrapper {
+    display: grid;
+    gap: 24px;
+    text-align: center;
+    
+}
+
+
+.content-width {
+    width: min(520px, 100%);
+    margin: 0 auto;
+    display: grid;
+    gap: 24px;
+}
+.card-link {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color:rgb(0, 73, 37)
+}
+
+.card-link ion-icon {
+  font-size: 16px;
+}
+
+.summary {
+    background-color:rgb(171, 218, 220);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.progress {
+    background-color: rgb(254, 219, 165);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.summary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+
+}
+
+.progress:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+@media (min-width: 768px) {
+    .summary-progress-wrapper {
+        grid-template-columns: 1fr 1fr;
+    
+    }
+}

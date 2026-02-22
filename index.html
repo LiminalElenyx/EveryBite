@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>EveryBite</title>
+</head>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+<body>
+  <header>
+    <h1 class="site-title"><img src="images/EveryBite.jpg" alt="EveryBite></h1>
+    <p>Every bite makes a difference</p>
+    <h2 id="greeting">Hello! How are you feeling today?</h2>
+   </header>
+
+   <main class="dashboard">
+    <div class="content-width">
+        <section class="card">
+            <div class="action-row">
+                <a class="dash-link log" href="log.html">Log A Meal</a>
+                <a class="dash-link nutrients" href="nutrients.html">Find Nutrients</a>
+                <a class="dash-link suggest" href="suggest.html">Food Suggestion</a>
+            </div>
+        </section>    
+            
+
+        <div class="summary-progress-wrapper">
+
+            <section class="card summary">
+                <h3 class="card-title">
+                <a class="card-link summary" href="summary.html">
+                    <span>Daily Nutrient Summary</span>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+                </h3>
+                <p>Vitamin C 7.2 mg</p>
+                <p>Fiber  1.8 g</p>
+            </section>    
+    
+            <section class="card progress">
+                <h3 class="card-title">
+                <a class="card-link progress" href="progress.html">
+                    <span>Progress Insights</span>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                </a>
+                </h3>
+                <p>Today's intake supports healthy immunity, brain function, and...</p>
+            </section>
+
+        </div>
+    </div>    
+    
+    </main>
+</body>
+</html>
