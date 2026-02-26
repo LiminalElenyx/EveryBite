@@ -29,7 +29,7 @@ body {
 }
 
 h1,
-h2 {
+h2  {
     font-family: 'Libre Baskerville', serif;
 }
 
@@ -45,7 +45,7 @@ h1 {
 h2 {
     font-size: 1.6rem;
     font-weight: 400;
-    color:rgb(0, 73, 37);
+    color:rgb(5, 101, 53);
 }
 
 h3 {
@@ -57,7 +57,7 @@ h3 {
 p {
     font-size: 1rem;
     font-weight: 400;
-    color:rgb(0, 73, 37);
+    color:rgb(5, 101, 53);
 }
 
 header {
@@ -78,8 +78,9 @@ footer {
 #greeting {
     font-size: 1.6rem;
     font-weight: 400;
-    color:rgb(0, 73, 37);
+    color:rgb(5, 101, 53);
 }
+
 .dashboard {
     display: grid;
     gap: 24px;
@@ -108,7 +109,7 @@ footer {
     padding: 40px 22px;
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
-    color:rgb(0, 73, 37);
+    color:rgb(5, 101, 53);
 
 }
 
@@ -118,7 +119,8 @@ footer {
 }
 
 .log {
-    background-color: rgb(228, 163, 199);
+    background-color: rgb(241, 203, 212);
+    /* rgb(228, 163, 199); */
 }
 
 .nutrients {
@@ -148,7 +150,7 @@ footer {
     border-radius: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    color:rgb(0, 73, 37)
+    color:rgb(5, 101, 53);
 }
 
 .card-link ion-icon {
