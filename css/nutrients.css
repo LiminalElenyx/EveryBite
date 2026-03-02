@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(218, 217, 241);
+}
+.nutrient-card {
+    display: flex;
+    width: 100%;
+    max-width: 520px;
+    flex-direction: column;
+    text-align: center;
+
+    background-color: rgb(252, 248, 242);
+    padding: 10px 18px;
+    border-radius: 10px;
+    margin: 44px  0;
+  
+    font-family: "Poppins", sans-serif;
+    color: rgb(112, 151, 121);
+}
+
+.nutrient-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.nutrient-page h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 30px;
+  font-weight: 550;
+  letter-spacing: 1.5px;
+  }
+
