@@ -1,0 +1,19 @@
+const nutrients = [
+     {
+    "id" : 1162,
+    name: "Vitamin C",
+    summary: "Supports immune function, collagen production, and antioxidant protection.",
+    benefits: [
+      { title: "Immune support", body: "Helps support immune cell function and protection." },
+      { title: "Collagen + wound healing", body: "Needed to make collagen for skin, connective tissue, and healing." },
+      { title: "Antioxidant role", body: "Helps protect cells from oxidative stress." }
+    ],
+    systems: ["Immune", "Skin/Connective tissue", "Cell protection"]
+  },
+
+]
+
+percent = consumed / target
+if percent < 0.5 → “low”
+if 0.5–0.99 → “getting there”
+if >= 1.0 → “met goal”

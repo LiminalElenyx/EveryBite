@@ -1,0 +1,28 @@
+{
+  "name": "everybite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiminalElenyx/EveryBite.git"
+  },
+  "author": "Liminal Elenyx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiminalElenyx/EveryBite/issues"
+  },
+  "homepage": "https://github.com/LiminalElenyx/EveryBite#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "dotenv": "^17.3.1",
+    "nodemon": "^3.1.14"
+  }
+}
