@@ -1,19 +1,372 @@
-const nutrients = [
-     {
+[
+  {
     "id" : 1162,
-    name: "Vitamin C",
-    summary: "Supports immune function, collagen production, and antioxidant protection.",
-    benefits: [
-      { title: "Immune support", body: "Helps support immune cell function and protection." },
-      { title: "Collagen + wound healing", body: "Needed to make collagen for skin, connective tissue, and healing." },
-      { title: "Antioxidant role", body: "Helps protect cells from oxidative stress." }
+    "name": "Vitamin C",
+    "RDI": "90 mg",
+    "summary": "Supports immune function, collagen production, and antioxidant protection.",
+    "benefits": [
+      { "title": "Immune support", "body": "Helps support immune cell function and protection." },
+      { "title": "Collagen + wound healing", "body": "Needed to make collagen for skin, connective tissue, and healing." },
+      { "title": "Antioxidant role", "body": "Helps protect cells from oxidative stress." }
     ],
-    systems: ["Immune", "Skin/Connective tissue", "Cell protection"]
-  },
+    "systems": ["Immune", "Skin/Connective tissue", "Cell protection"],
+    "topFoodSources": ["Red bell peppers", "Kiwi", "Oranges"]
+},
 
+{
+    "id" : 1106,
+    "name": "Vitamin A",
+    "RDI": "900 mcg",
+    "summary": "Supports vision, immune defense, and healthy skin epithelial tissues.",
+    "benefits": [
+      { "title": "Vision support", "body": "Maintains healthy retinal function and supports night vision." },
+      { "title": "Immune Regulation", "body": "Helps maintain immune defenses against pathogens." },
+      { "title": "Skin and tissue health", "body": "Supports maintenance and repair of skin and epthelial tissues." }
+    ],
+    "systems": ["Vision", "Immune", "Integumentary"],
+    "topFoodSources": ["Sweet potatoes", "Carrots", "Beef liver"]
+},
+
+{
+    "id" : 1114,
+    "name": "Vitamin D",
+    "RDI": "20 mcg",
+    "summary": "Helps regulate calcium absorption and supports bone strength and immune function.",
+    "benefits": [
+      { "title": "Bone ineralization", "body": "Supports calcium absorption and bone density." },
+      { "title": "Immune modulation", "body": "Helps regulate immune response and inflammation." },
+      { "title": "Hormonal regulation", "body": "Acts as a hormone precursor influencing multiple metabolic processes." }
+    ],
+    "systems": ["Skeletal system", "Immune system", "Endocrine system"],
+    "topFoodSources": ["Salmon", "Sardines", "Egg yolks"]
+},
+
+{
+    "id" : 1109,
+    "name": "Vitamin E",
+    "aliases": "Alpha-tocopherol",
+    "RDI": "15 mg",
+    "summary": "Acts as an antioxidant protecting cells from oxidative damage.",
+    "benefits": [
+      { "title": "Antioxidant protection", "body": "Neutralizes free radicals that damage cells." },
+      { "title": "Cell membrane protection", "body": "Helps maintain integrity of cell membranes." },
+      { "title": "Immune support", "body": "Supports immune cell function and signaling." }
+    ],
+    "systems": ["Immune", "Cardiovascular", "Integumentary"],
+    "topFoodSources": ["Sunflower seeds", "Almonds", "Spinach"]
+},
+
+{
+  "id": 1185,
+  "name": "Vitamin K",
+  "aliases": "Phylloquinone",
+  "RDI": "120 mcg",
+  "summary": "Essential for blood clotting and bone metabolism",
+  "benefits": [
+    { "title": "Blood clotting support", "body": "Enables proteins required for normal blood clotting." },
+    { "title": "Bone metabolism", "body": "Supports bone mineralization and density." },
+    { "title": "Calcium regulation", "body": "Helps regulate calcium deposition in bones and tissues." }
+  ],
+  "systems": ["Circulatory system", "Skeletal system", "Cardiovascular system"],
+  "topFoodSources": ["Kale", "Spinach", "Broccoli"]
+},
+
+{
+  "id": 1165,
+  "name": "Vitamin B1",
+  "aliases": "Thiamin",
+  "RDI": "1.2 mg",
+  "summary": "Supports carbohydrate metabolism and nervous system function",
+  "benefits": [
+    { "title": "Energy metabolism", "body": "Helps convert carbohydrates into usable cellular energy." },
+    { "title": "Nerve signaling", "body": "Supports healthy nerve communication." },
+    { "title": "Heart function", "body": "Supports cardiac muscle performance." }
+  ],
+  "systems": ["Nervous system", "Metabolic system", "Cardiovascular system"],
+  "topFoodSources": ["Sunflower seeds", "Brown rice", "Black beans"]
+},
+
+{
+  "id": 1166,
+  "name": "Vitamin B2",
+  "aliases": "Riboflavin",
+  "RDI": "1.3 mg",
+  "summary": "Supports energy production and antioxidant enzyme systems.",
+  "benefits": [
+    { "title": "Energy production", "body": "Helps convert nutrients into cellular energy." },
+    { "title": "Antioxidant support", "body": "Supports enzymes that protect against oxidative stress." },
+    { "title": "Tissue maintenance", "body": "Supports healthy skin and eye tissues." }
+  ],
+  "systems": ["Metabolic system", "Integumentary system", "Visual system"],
+  "topFoodSources": ["Eggs", "Almonds", "Mushrooms"]
+},
+
+{
+  "id": 1167,
+  "name": "Vitamon B3",
+  "aliases": "Niacin",
+  "RDI": "16 mg",
+  "summary": "Supports metabolism, nervous system health, and skin maintenance.",
+  "benefits": [
+    { "title": "Energy metabolism", "body": "Helps convert food into usable cellular energy." },
+    { "title": "Brain function", "body": "Supports neural signaling." },
+    { "title": "Skin maintenance", "body": "Supports healthy skin tissues." }
+  ],
+  "systems": ["Nervous system", "Digestive system", "Integumentary system"],
+  "topFoodSources": ["Chicken breast", "Tuna", "Peanuts"]
+},
+
+{
+  "id": 1170,
+  "name": "Vitamin B5",
+  "aliases": "Pantothenic acid",
+  "RDI": "5 mg",
+  "summary": "Supports fatty acid metabolism and hormone production.",
+  "benefits": [
+    { "title": "Hormone synthesis", "body": "Helps produce hormones and neurotransmitters." },
+    { "title": "Fat metabolism", "body": "Supports megtabolism of fatty acids." },
+    { "title": "Energy production", "body": "Supports cellular energy pathways." }
+  ],
+  "systems": ["Endocrine system", "Metabolic system", "Nervous system"],
+  "topFoodSources": ["Chicken", "Mushrooms", "Avocados"]
+},
+
+{
+  "id": 1175,
+  "name": "Vitamin B6",
+  "RDI": "1.7 mg",
+  "summary": "Supports amino acid metabolism and neurotransmitter production.",
+  "benefits": [
+    { "title": "Neurotransmitter production", "body": "Helps produce serotonin and dopamine." },
+    { "title": "Protein metabolism", "body": "Supports amino acid metabolism." },
+    { "title": "Red blood cell formation", "body": "Supports healthy blood cell production." }
+  ],
+  "systems": ["Nervous system", "Circulatory system", "Metabolic system"],
+  "topFoodSources": ["Chickpeas", "Salmon", "Bananas"]
+},
+
+{
+  "id": 1176,
+  "name": "Vitamin B7",
+  "aliases": "Biotin",
+  "RDI": "30 mcg",
+  "summary": "Supports metabolism of carbohydrates, fats, and proteins and contributes to healthy hair, skin, and nails.",
+  "benefits": [
+    { "title": "Energy metabolism", "body": "Helps convert carbohydrates, fats, and proteins into usable cellular energy." },
+    { "title": "Hair and skin health", "body": "Supports maintenance of healthy hair, skin, and nails." },
+    { "title": "Cellular metabolism", "body": "Supports enzyme systems involved in nutrient metabolism." }
+  ],
+  "systems": ["Metabolic system", "Integumentary system", "Cellular system"],
+  "topFoodSources": ["Eggs", "Almonds", "Sweet potatoes"]
+},
+
+{
+  "id": 1177,
+  "name": "Folate",
+  "aliases": "Folate, total",
+  "RDI": "400 mcg",
+  "summary": "Essential for DNA synthesis and healthy cell division.",
+  "benefits": [
+    { "title": "DNA synthesis", "body": "Supports genetic replication and repair." },
+    { "title": "Red blood cell production", "body": "Supports healthy blood function." },
+    { "title": "Fetal development", "body": "Supports neural development during pregnancy." }
+  ],
+  "systems": ["Circulatory system", "Reproductive system", "Cellular system"],
+  "topFoodSources": ["Lentils", "Spinach", "Asparagus"]
+},
+
+{
+  "id": 1178,
+  "name": "Vitamin B12",
+  "RDI": "2.4 mcg",
+  "summary": "Supports nerve health and red blood cell production",
+  "benefits": [
+    { "title": "Nerve maintenance", "body": "Supports protective coverings of nerve cells." },
+    { "title": "Red blood cell formation", "body": "Supports healthy blood cell production." },
+    { "title": "DNA synthesis", "body": "Supports cellular genetic processes." }
+  ],
+  "systems": ["Nervous system", "Circulatory system", "Cellular system"],
+  "topFoodSources": ["Clams", "Salmon", "Eggs"]
+},
+
+{
+  "id": 1087,
+  "name": "Calcium",
+  "aliases": "Calcium, Ca",
+  "RDI": "1300 mg",
+  "summary": "Supports strong bones and teeth and plays an important role in muscle contraction and nerve signaling.",
+  "benefits": [
+    { "title": "Bone strength", "body": "Helps build and maintain strong bones and teeth." },
+    { "title": "Muscle contraction", "body": "Required for proper muscle movement and contraction." },
+    { "title": "Nerve signaling", "body": "Helps transmit signals between nerves and muscles." }
+  ],
+  "systems": ["Skeletal system", "Muscular system", "Nervous system"],
+  "topFoodSources": ["Milk", "Sardines", "Kale"]
+},
+
+{
+  "id": 1089,
+  "name": "Iron",
+  "aliases": "Iron, Fe",
+  "RDI": "18 mg",
+  "summary": "Helps transport oxygen throughout the body and supports energy production.",
+  "benefits": [
+    { "title": "Oxygen transport", "body": "Essential for hemoglobin to carry oxygen in the blood." },
+    { "title": "Energy metabolism", "body": "Supports cellular energy production." },
+    { "title": "Red blood cell production", "body": "Helps for healthy red blood cells." }
+  ],
+  "systems": ["Circulatory system", "Respiratory system", "Metabolic system"],
+  "topFoodSources": ["Lentils", "Spinach", "Pumpkin seeds"]
+},
+
+{
+  "id": 1090,
+  "name": "Magnesium",
+  "aliases": "Magnesium, Mg",
+  "RDI": "420 mg",
+  "summary": "Supports hundreds of biochemical reactions including muscle function, nerve signaling,and energy production.",
+  "benefits": [
+    { "title": "Muscle function", "body": "Helps muscles contract and relax properly." },
+    { "title": "Energy production", "body": "Supports cellular energy metabolism." },
+    { "title": "Nerve signaling", "body": "Helps regulate nerve impulses." }
+  ],
+  "systems": ["Muscular system", "Nervous system", "Metabolic system"],
+  "topFoodSources": ["Pumpkin seeds", "Almonds", "Spinach"]
+},
+
+{
+  "id": 1091,
+  "name": "Phosphorus",
+  "aliases": "Phosphorus, P",
+  "RDI": "1250 mg",
+  "summary": "Supports bone health and helps the body produce and store energy.",
+  "benefits": [
+    { "title": "Bone formation", "body": "Works with calcium to strengthen bones and teeth." },
+    { "title": "Energy storage", "body": "Helps produce ATP, the body's main energy molecule." },
+    { "title": "Cell structure", "body": "Supports formation of cell membranes." }
+  ],
+  "systems": ["Skeletal system", "Metabolic system", "Cellular system"],
+  "topFoodSources": ["Pumpkin seeds", "Lentils", "Yogurt"]
+},
+
+{
+  "id": 1092,
+  "name": "Potassium",
+  "aliases": "Potassium, K",
+  "RDI": "4700 mg",
+  "summary": "Helps regulate fluid balance, nerve signals, and muscle contractions.",
+  "benefits": [
+    { "title": "Fluid balance", "body": "Helps maintain proper fluid balance in the body." },
+    { "title": "Nerve signaling", "body": "Supports nerve communication." },
+    { "title": "Muscle function", "body": "Helps muscles contract properly." }
+  ],
+  "systems": ["Cardiovascular system", "Muscular system", "Nervous system"],
+  "topFoodSources": ["Bananas", "Potatoes", "Spinach"]
+},
+
+{
+  "id": 1093,
+  "name": "Sodium",
+  "aliases": "Sodium, Na",
+  "RDI": "2300 mg",
+  "summary": "Helps regulate fluid balance and supports nerve and muscle function.",
+  "benefits": [
+    { "title": "Fluid regulation", "body": "Maintains proper fluid balance in the body." },
+    { "title": "Nerve transmission", "body": "Helps transmit nerve signals." },
+    { "title": "Muscle contraction", "body": "Supports muscle movement." }
+  ],
+  "systems": ["Nervous system", "Muscular system", "Cardiovascular system"],
+  "topFoodSources": ["Seaweed", "Pickles", "Table salt"]
+},
+
+{
+  "id": 1095,
+  "name": "Zinc",
+  "aliases": "Zinc, Zn",
+  "RDI": "11 mg",
+  "summary": "Supports immune function, would healing, and DNA synthesis.",
+  "benefits": [
+    { "title": "Immune support", "body": "Helps immune cells fight infections." },
+    { "title": "Wound healing", "body": "Supports tissue repair and healing." },
+    { "title": "Cell growth", "body": "Supports DNA synthesis and cell division." }
+  ],
+  "systems": ["Immune system", "Integumentary system", "Cellular system"],
+  "topFoodSources": ["Pumpkin seeds", "Chickpeas", "Cashews"]
+},
+
+{
+  "id": 1098,
+  "name": "Copper",
+  "aliases": "Copper, Cu",
+  "RDI": ".9 mg",
+  "summary": "Supports iron metabolism, energy production, and connective tissue formation.",
+  "benefits": [
+    { "title": "Iron metabolism", "body": "Helps the body absorb and use iron" },
+    { "title": "Energy production", "body": "Supports cellular energy reactions." },
+    { "title": "Connective tissue formation", "body": "Supports collagen and connective tissue formation." }
+  ],
+  "systems": ["Circulatory system", "Metabolic system", "Connective tissue system"],
+  "topFoodSources": ["Cashews", "Sunflower seeds", "Mushrooms"]
+},
+
+{
+  "id": 1103,
+  "name": "Selenium",
+  "aliases": "Selenium, Se",
+  "RDI": "55 mcg",
+  "summary": "Acts as an antioxidant and supports thyroid hormone metabolism.",
+  "benefits": [
+    { "title": "Antioxidant protection", "body": "Helps protect cells from oxidative damage." },
+    { "title": "Thyroid function", "body": "Supports metabolism of thyroid hormones." },
+    { "title": "Immune support", "body": "Supports immune system function." }
+  ],
+  "systems": ["Endocrine system", "Immune system", "Cellular protection"],
+  "topFoodSources": ["Brazil nuts", "Tuna", "Brown rice"]
+},
+
+{
+  "id": 1101,
+  "name": "Manganese",
+  "aliases": "Manganese, Mn",
+  "RDI": "2.3 mg",
+  "summary": "Supports metabolism, bone formation, and antioxidant activity.",
+  "benefits": [
+    { "title": "Bone development", "body": "Supports bone formation and structure." },
+    { "title": "Metabolism support", "body": "Helps process carbohydrates and amino acids." },
+    { "title": "Antioxidant activity", "body": "Supports enzymes that protect cells." }
+  ],
+  "systems": ["Skeletal system", "Metabolic system", "Cellular protection"],
+  "topFoodSources": ["Oats", "Pineapple", "Pecans"]
+},
+
+
+{
+  "id": 1079,
+  "name": "Fiber",
+  "aliases": "Fiber, total dietary",
+  "RDI": "28 g",
+  "summary": "Supports digestive health, helps regulate blood sugar, and promotes satiety.",
+  "benefits": [
+    { "title": "Digestive health", "body": "Supports healthy digestion and gut function." },
+    { "title": "Blood sugar regulation", "body": "Helps slow carbohydrate absorption and stabilize blood sugar levels." },
+    { "title": "Heart health", "body": "Helps reduce cholesterol levels and support cardiovascular health." }
+  ],
+  "systems": ["Digestive system", "Cardiovascular system", "Metabolic system"],
+  "topFoodSources": ["Chia seeds", "Flax seeds", "Lentils", "Oats"]
+},
+
+{
+  "id": 1100,
+  "name": "Iodine",
+  "aliases": "Iodine, I",
+  "RDI": "150 mcg",
+  "summary": "Essential for production of thyroid hormones that regulate metabolism and growth.",
+  "benefits": [
+    { "title": "Thyroid hormone production", "body": "Supports production of thyroid hormones that regulate metabolism." },
+    { "title": "Metabolic regulation", "body": "Helps control metabolic rate and energy usage." },
+    { "title": "Growth and development", "body": "Supports normal growth and neurological development." }
+  ],
+  "systems": ["Endocrine system", "Metabolic system", "Nervous system"],
+  "topFoodSources": ["Seaweed", "Cod", "Dairy products"]
+}
 ]
-
-percent = consumed / target
-if percent < 0.5 → “low”
-if 0.5–0.99 → “getting there”
-if >= 1.0 → “met goal”
