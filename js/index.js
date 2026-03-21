@@ -1,3 +1,5 @@
+console.log("JS connected");
+
 async function getFood(name) {
     try {
         const res = await fetch(
@@ -11,4 +13,6 @@ async function getFood(name) {
     }
 }
 
-await getFood("orange");
+//await getFood("orange");
+
+

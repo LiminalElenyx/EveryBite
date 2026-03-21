@@ -31,3 +31,6 @@ body {
   letter-spacing: 1.5px;
   }
 
+#nutrient-result {
+    display: none;
+}

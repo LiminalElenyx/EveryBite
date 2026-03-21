@@ -17,19 +17,27 @@
         <h2>Find Nutrients</h2>
         <form class="nutrient-search">
             <input 
+            id="nutrient-input"
             type="text"
             name="nutrient"
             placeholder="Search for Nutrients"
             required>
+
+        <button type="submit">Search</button>    
         </form>
 
 
-        <section class="nutrient-card">
-            <h3>Magnesium</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptates reprehenderit magnam sit vel quibusdam eum
-                fuga doloremque magni voluptate labore quaerat quae quasi accusantium, laborum, quam error? Accusamus, dolor.</p>
+        <section class="nutrient-card" id="nutrient-result">
+            <h3></h3>
+            <p></p>
+            <h5>Daily Recommended Intake</h5>
+            <p id="nutrient-rdi"></p>
+
+            <section class="benefits-section"></section>
+            <section class="systems-section"></section>
+            <section class="foods-section"></section>
         </section>   
     </main>
-    
+    <script src="../js/nutrients.js"></script>
 </body>
 </html>

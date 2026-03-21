@@ -97,6 +97,43 @@ async function getNutrients() {
     }
 }
 
+app.get("/api/getNutrientByName", async (req, res) => {
+    if (!req.query.name) {
+        return res.status(400).json({
+            status: 400,
+            message: "No nutrient name provided",
+        });
+    }
+
+    try {
+        const nutrientInfo = await getNutrients();
+
+        const matchedNutrient = nutrientInfo.find((nutrient) =>
+        nutrient.name.toLowerCase() === req.query.name.trim().toLowerCase()
+    );
+
+    if (!matchedNutrient) {
+        return res.status(404).json({
+            status: 404,
+            message: "Nutrient not found",
+        });
+    }
+
+    res.status(200).json({
+        status: 200,
+        data: matchedNutrient,
+    });
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            status: 500,
+            message: "Server error",
+        });
+    }
+});
+
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
 });
+
