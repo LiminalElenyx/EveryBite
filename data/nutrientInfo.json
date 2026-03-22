@@ -9,7 +9,7 @@
       { "title": "Collagen + wound healing", "body": "Needed to make collagen for skin, connective tissue, and healing." },
       { "title": "Antioxidant role", "body": "Helps protect cells from oxidative stress." }
     ],
-    "systems": ["Immune", "Skin/Connective tissue", "Cell protection"],
+    "systems": ["Immune system", "Integumentary system", "Cellular protection"],
     "topFoodSources": ["Red bell peppers", "Kiwi", "Oranges"]
 },
 
@@ -23,7 +23,7 @@
       { "title": "Immune Regulation", "body": "Helps maintain immune defenses against pathogens." },
       { "title": "Skin and tissue health", "body": "Supports maintenance and repair of skin and epthelial tissues." }
     ],
-    "systems": ["Vision", "Immune", "Integumentary"],
+    "systems": ["Visual system", "Immune system", "Integumentary system"],
     "topFoodSources": ["Sweet potatoes", "Carrots", "Beef liver"]
 },
 
@@ -52,7 +52,7 @@
       { "title": "Cell membrane protection", "body": "Helps maintain integrity of cell membranes." },
       { "title": "Immune support", "body": "Supports immune cell function and signaling." }
     ],
-    "systems": ["Immune", "Cardiovascular", "Integumentary"],
+    "systems": ["Immune system", "Cardiovascular system", "Integumentary system"],
     "topFoodSources": ["Sunflower seeds", "Almonds", "Spinach"]
 },
 
@@ -156,7 +156,7 @@
     { "title": "Hair and skin health", "body": "Supports maintenance of healthy hair, skin, and nails." },
     { "title": "Cellular metabolism", "body": "Supports enzyme systems involved in nutrient metabolism." }
   ],
-  "systems": ["Metabolic system", "Integumentary system", "Cellular system"],
+  "systems": ["Metabolic system", "Integumentary system", "Cellular metabolism"],
   "topFoodSources": ["Eggs", "Almonds", "Sweet potatoes"]
 },
 
@@ -171,7 +171,7 @@
     { "title": "Red blood cell production", "body": "Supports healthy blood function." },
     { "title": "Fetal development", "body": "Supports neural development during pregnancy." }
   ],
-  "systems": ["Circulatory system", "Reproductive system", "Cellular system"],
+  "systems": ["Circulatory system", "Reproductive system", "Cellular function"],
   "topFoodSources": ["Lentils", "Spinach", "Asparagus"]
 },
 
@@ -185,7 +185,7 @@
     { "title": "Red blood cell formation", "body": "Supports healthy blood cell production." },
     { "title": "DNA synthesis", "body": "Supports cellular genetic processes." }
   ],
-  "systems": ["Nervous system", "Circulatory system", "Cellular system"],
+  "systems": ["Nervous system", "Circulatory system", "Cellular function"],
   "topFoodSources": ["Clams", "Salmon", "Eggs"]
 },
 
@@ -245,7 +245,7 @@
     { "title": "Energy storage", "body": "Helps produce ATP, the body's main energy molecule." },
     { "title": "Cell structure", "body": "Supports formation of cell membranes." }
   ],
-  "systems": ["Skeletal system", "Metabolic system", "Cellular system"],
+  "systems": ["Skeletal system", "Metabolic system", "Cellular function"],
   "topFoodSources": ["Pumpkin seeds", "Lentils", "Yogurt"]
 },
 
@@ -290,7 +290,7 @@
     { "title": "Wound healing", "body": "Supports tissue repair and healing." },
     { "title": "Cell growth", "body": "Supports DNA synthesis and cell division." }
   ],
-  "systems": ["Immune system", "Integumentary system", "Cellular system"],
+  "systems": ["Immune system", "Integumentary system", "Cellular function"],
   "topFoodSources": ["Pumpkin seeds", "Chickpeas", "Cashews"]
 },
 
@@ -305,7 +305,7 @@
     { "title": "Energy production", "body": "Supports cellular energy reactions." },
     { "title": "Connective tissue formation", "body": "Supports collagen and connective tissue formation." }
   ],
-  "systems": ["Circulatory system", "Metabolic system", "Connective tissue system"],
+  "systems": ["Circulatory system", "Metabolic system", "Integumentary system"],
   "topFoodSources": ["Cashews", "Sunflower seeds", "Mushrooms"]
 },
 
