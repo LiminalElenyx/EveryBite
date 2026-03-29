@@ -89,6 +89,11 @@ footer {
     
 }
 
+.main-nav {
+    text-align: center;
+    color: rgb(145, 68, 83);
+}
+
 .card {
     padding: 0;
     background: transparent ;

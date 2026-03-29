@@ -110,3 +110,8 @@ button {
     transition: .2s ease;
 
 }
+
+.main-nav {
+    text-align: center;
+    color: rgb(145, 68, 83);
+}
