@@ -1,11 +1,10 @@
-console.log("Log is connected");
 
 const form = document.querySelector(".food-search");
 const input = form.querySelector("input");
 const loggedMealsSection = document.querySelector(".logged-meals");
 const mealCard = document.querySelector(".meal-card");
 const mealCardText = mealCard.querySelector("p");
-const friendlySystemLabels = {
+export const friendlySystemLabels = {
   "Immune system": "immune health",
   "Integumentary system": "skin health",
   "Visual system": "eye health",
@@ -46,7 +45,7 @@ function createLoggedFood(foodData) {
   };
 }
 
-function getLoggedFoods() {
+export function getLoggedFoods() {
   const storedFoods = localStorage.getItem("loggedFoods");
   return storedFoods ? JSON.parse(storedFoods) : [];
 }
@@ -135,7 +134,7 @@ function getFriendlyTopSystems(limit = 3) {
   });
 }
 
-function formatList(items) {
+export function formatList(items) {
   if (items.length === 0) return "";
   if (items.length === 1) return items[0];
   if (items.length === 2) return `${items[0]} and ${items[1]}`;
