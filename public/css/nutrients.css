@@ -17,6 +17,14 @@ body {
     color: rgb(112, 151, 121);
 }
 
+.nutrient-card ul {
+    list-style-position: inside;
+    text-align: center; 
+    padding-left: 0;
+    margin: 12px auto;
+    width: fit-content;
+}
+
 .nutrient-page {
     display: flex;
     flex-direction: column;

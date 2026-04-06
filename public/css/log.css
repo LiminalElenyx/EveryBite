@@ -59,6 +59,7 @@ button {
 }
 
 .meal-card {
+    
     width: 100%;
     max-width: 520px;
     flex-direction: column;
@@ -115,3 +116,4 @@ button {
     text-align: center;
     color: rgb(145, 68, 83);
 }
+
