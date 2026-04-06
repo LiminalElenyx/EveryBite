@@ -35,7 +35,7 @@ async function getFoodByName(name) {
   }
 }
 
-function createLoggedFood(foodData) {
+async function createLoggedFood(foodData) {
   return {
     id: Date.now(),
     name: foodData.name,
@@ -165,7 +165,7 @@ form.addEventListener("submit", async (event) => {
 
   const response = await getFoodByName(foodName);
 
-  const loggedFood = createLoggedFood(response);
+  const loggedFood = await createLoggedFood(response);
 
   const loggedFoods = getLoggedFoods();
   loggedFoods.push(loggedFood);
