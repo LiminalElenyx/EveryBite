@@ -69,12 +69,21 @@ This app uses an Express.js backend to handle API requests and act as an interme
 
 ## Using EveryBite
 ### Setup & Installation 
-```
-git clone https://github.com/LiminalElenyx/EveryBite.git
-cd EveryBite
-npm install
-npm run dev
-```
+This project requires an API key from the USDA FoodData Central API.
+1. Create a free account and obtain API key:
+   https://fdc.nal.usda.gov/api-key-signup.html
+2. Clone the repository:
+   ```
+   git clone https://github.com/LiminalElenyx/EveryBite.git
+   cd EveryBite
+   npm install
+   ```
+3. Create a `.env` file in the root of the project and add your USDA API key:
+   USDA_API_KEY=your_API_key_here
+4. Ensure your server loads environment variables using `dotenv`
+5. Run server:
+   `npm run dev`
+
 ### How to use
 Open your browser and navigate to:
 http://localhost:8080
@@ -83,7 +92,7 @@ http://localhost:8080
 - Search for food item
 - Select and log it
 - View top occurring nutrients and top bodily systems affected
-- View updated daily nutrient totals *(to come)*
+- View updated daily nutrient totals
 
 **Search for Nutrients**
 - Search for a specific nutrient
